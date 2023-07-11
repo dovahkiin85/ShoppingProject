@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title>Product review tab</title>
+<body>
+
+<h1>Here be products</h1>
+<ul>
+    {% for x in myproducts %}
+      <li>Name:{{ x.p_name }} 
+          Desc:{{x.p_desc}} 
+          Price:{{x.p_price}} 
+          Category:{{x.p_category}} 
+          Available?:
+            {% if x.p_available == True%}
+                Yes    
+            {%else%}
+                No   
+            {% endif %}
+          Stock:{{x.p_stock}}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

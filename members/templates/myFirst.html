@@ -3,7 +3,12 @@
 <body>
 
 <h1>Hello World!</h1>
-<p>Welcome to my first Django project!</p>
+<ul>
+    {% for x in mymembers %}
+      <li>{{ x.firstname }} {{ x.lastname }}</li>
+    {% endfor %}
+  </ul>
+
 
 </body>
 </html>
