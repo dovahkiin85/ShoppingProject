@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <title>Product view tab</title>
+    <title>Product edit tab</title>
 <body>
 
 <h1>Here be products</h1>
@@ -16,7 +16,13 @@
             {%else%}
                 No   
             {% endif %}
-          Stock:{{x.p_stock}}</li>
+          Stock:{{x.p_stock}}
+            <form method="post" action="/products/edit">
+                {% csrf_token %}
+                <input type="hidden" name='p_id' value={{x.id}}>
+                <button type="submit" style="background-color: red; color: yellow;">Delete</button>
+            </form>
+            <a href="{% url 'product-edit' x.id %}">Edit</a></li>
     {% endfor %}
   </ul>
 </body>
