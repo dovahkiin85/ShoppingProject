@@ -1,0 +1,149 @@
+body {
+    background-repeat: no-repeat, repeat;
+    background-size: 1920px 1100px;
+    background-image: url("nissan.jpg");
+    height: 100vh;
+    background-color: mediumpurple;
+     background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+
+
+
+}
+
+h2{
+    margin-top: 50px;
+    text-align: center;
+    font-family: YELLOWTAIL;
+    color: white;
+    font-size: 60px;
+}
+.btn-primary{
+    background-color: rebeccapurple;
+    margin-top: 600px;
+    font-size: 40px;
+}
+.center{
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+    font-family: "Palatino Linotype" ;
+}
+footer{
+    margin-top: 90px;
+    position: relative;
+
+}
+
+
+.navbar-nav{
+    margin-left: 70px;
+    font-family: YELLOWTAIL;
+}
+
+.right{
+    margin-top: 15px;
+    position: absolute;
+    left: 1710px;
+    display: block;
+    width: 180px;
+    text-align: right;
+    background-color: transparent;
+
+}
+.per{
+     margin-top: 17px;
+    position: absolute;
+    left: 1650px;
+    display: block;
+    width: 180px;
+    text-align: right;
+    background-color: transparent;
+}
+li{
+    padding-left: 40px;
+    text-decoration: underline 0.15em transparent;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+
+li:hover{
+     text-decoration-color: white;
+     text-underline-offset: 0.4em;
+}
+
+.navbar-brand{
+    color: white;
+    font-family:YELLOWTAIL;
+    position: absolute;
+    left: 46%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    text-decoration: underline 0.15em transparent;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+}
+.navbar-brand:hover{
+    color: white;
+    text-decoration-color: white;
+     text-underline-offset: 0.4em;
+
+}
+.navbar .navbar-nav .nav-link {
+    padding: 1em 0.7em;
+    transition: all 0.5s;
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: snow;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 0.6em;
+}
+
+.navbar .navbar-brand {
+  padding: 0 0.6em;
+}
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0.7em;
+  }
+  .navbar .navbar-brand {
+    padding: 0 0.8em;
+  }
+}
+
+
+
+.hvr-icon-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-rotate .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-rotate:hover .hvr-icon, .hvr-icon-rotate:focus .hvr-icon, .hvr-icon-rotate:active .hvr-icon {
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
